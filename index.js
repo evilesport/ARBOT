@@ -2,6 +2,13 @@ const { Client } = require('discord.js');
 const fs = require('fs');
 const Enmap = require('enmap');
 require('dotenv-flow').config();
+require('dotenv/config');
+const http = require('http');
+const port = process.env.PORT || 3000;
+http.createServer().listen(port);
+
+const prefix = config.prefix
+const token = process.env.TOKEN
 
 const client = new Client();
 
