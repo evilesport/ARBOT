@@ -7,7 +7,7 @@ const http = require('http');
 const port = process.env.PORT || 3000;
 http.createServer().listen(port);
 
-const prefix = config.prefix
+const prefix = process.env.prefix
 const token = process.env.TOKEN
 
 const client = new Client();

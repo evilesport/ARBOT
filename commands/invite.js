@@ -11,7 +11,7 @@ exports.run = async (anko, message, args, color) => {
     .setAuthor(`Invite request from ${message.author.tag}`, message.author.displayAvatarURL)
     .setFooter(`Invite Created at • ${moment().format('MMMM Do YYYY, h:mm:ss a')}`)
     .addField(`**Permanent Invite Link**:`, `${invite}`);
-    message.channel.send(embed);
+    message.member.send(embed);
   });
 }
 

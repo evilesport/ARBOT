@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
    let serverembed = new Discord.RichEmbed()
    .setAuthor(message.guild.name, sicon)
    .setFooter(` Server created date • ${day}.${month}.${year}`)
-   .setColor("#7289DA")
+   .setColor("GREEN")
    .setThumbnail(sicon)
    .setTitle('All our server commands')
    .addField('!ban', 'With this command you can ban User')
